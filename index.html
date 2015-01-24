@@ -109,7 +109,7 @@ $('#parameterButton').click(function(){
   var width = Number($('#width').val())
   var height = Number($('#height').val())
   // Fill in the formula for a parameter here:
-  var result = width * height
+  var result =
   $('#parameterResult').text(result)
 })
 </script>
@@ -131,8 +131,7 @@ $('#dissappearButton').click(function(){
 <input type="button" id="reappearButton" value="Make it Come back">
 <script>
 $('#reappearButton').click(function(){
-  // If .hide() makes it hide, Can you guess how to "show" it again?
-  $('#someText')
+  $('#someText').show()
 })
 </script>
 
