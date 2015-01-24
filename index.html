@@ -70,30 +70,16 @@ $('#divideButton').click(function(){
   var divide2 = Number($('#divide2').val());
   // Divide the two numbers together. Slash / means divide.
   // Write the division code yourself.
-  var result = 
+  var result = divide1 / divide2
   $('#divideResult').text(result)
 })
 </script>
 
 
-<h2>Subtraction 
-<h2>Basic Subtraction</h2>
-<input value="1" id="Subtract1">
-minus
-<input value="2" id="Subtract2">
-<input type="button" value="equals" id="SubtractButton">
-<span id="SubtractResult"></span>
-<script>
-$('#SubtractButton').click(function(){
-  // Get numbers from the two boxes.
-  var Subtract1 = Number($('#Subtract1').val());
-  var Subtract2 = Number($('#Subtract2').val());
-  // Subtract the two numbers together and store them as result.
-  var result = Subtract1 - Subtract2;
-  // Show the result.
-  $('#SubtractResult').text(result)
-})
-</script>
+<h2>Subtraction (Make this one by copying the addition code)</h2>
+Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
+Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
+
 
 
 
@@ -131,7 +117,8 @@ $('#dissappearButton').click(function(){
 <input type="button" id="reappearButton" value="Make it Come back">
 <script>
 $('#reappearButton').click(function(){
-  $('#someText').show()
+  // If .hide() makes it hide, Can you guess how to "show" it again?
+  $('#someText')
 })
 </script>
 
@@ -225,10 +212,15 @@ $('#randomButton2').click(function(){
 
 <h2>Even bigger Random Numbers (Finish this one yourself.)</h2>
 Get a random number between 1 and
-<input id="howBig" value="20">
+<input id="howBig" value="<'howBig">
 <input type="button" id="randomButton3" value="Go"> <span id="randomResult3"></span>
 <script>
-// Can you figure out how to do this one?
+$('#randomButton3').click(function(){
+  var result = Math.random()
+  result = Math.ceil(result * 10)
+  $('#randomResult3').text(result)
+})
+</script>
 </script>
 
 
