@@ -85,15 +85,15 @@ Go through and change add to subtract everywhere. Also, change the plus sign to 
 
 <h2>Parimeter of a Rectangle (Fill in the formula)</h2>
 Width:
-<input value="2" id="width">
+<input value="2" id="widthBox">
 Height:
-<input value="3" id="height">
+<input value="3" id="heightBox">
 <input type="button" value="calcuate parameter" id="parameterButton">
 <span id="parimeterResult"></span>
 <script>
 $('#parimeterButton').click(function(){
-  var width = Number($('#width').val())
-  var height = Number($('#height').val())
+  var width = Number($('#widthBox').val())
+  var height = Number($('#heightBox').val())
   // Fill in the formula for a parameter here:
   var result = width + height + width + height
   $('#parameterResult').text(result)
