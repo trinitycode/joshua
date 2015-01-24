@@ -70,16 +70,30 @@ $('#divideButton').click(function(){
   var divide2 = Number($('#divide2').val());
   // Divide the two numbers together. Slash / means divide.
   // Write the division code yourself.
-  var result = divide1 / divide2
+  var result = 
   $('#divideResult').text(result)
 })
 </script>
 
 
-<h2>Subtraction (Make this one by copying the addition code)</h2>
-Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
-Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
-
+<h2>Subtraction 
+<h2>Basic Subtraction</h2>
+<input value="1" id="Subtract1">
+minus
+<input value="2" id="Subtract2">
+<input type="button" value="equals" id="SubtractButton">
+<span id="SubtractResult"></span>
+<script>
+$('#SubtractButton').click(function(){
+  // Get numbers from the two boxes.
+  var Subtract1 = Number($('#Subtract1').val());
+  var Subtract2 = Number($('#Subtract2').val());
+  // Subtract the two numbers together and store them as result.
+  var result = Subtract1 - Subtract2;
+  // Show the result.
+  $('#SubtractResult').text(result)
+})
+</script>
 
 
 
